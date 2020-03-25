@@ -22,8 +22,8 @@ export default {
   },
   methods: {
     addUser() {
-      var name = this.userName;
-      var age = this.age;
+      const name = this.userName;
+      const age = this.age;
       axios.post('/api/user/addUser', {
         username: name,
         age: age
